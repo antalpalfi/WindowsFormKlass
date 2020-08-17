@@ -85,6 +85,7 @@
             this.btnKanPlus.TabIndex = 4;
             this.btnKanPlus.Text = "+";
             this.btnKanPlus.UseVisualStyleBackColor = true;
+            this.btnKanPlus.Click += new System.EventHandler(this.btnKanPlus_Click);
             // 
             // btnKanMin
             // 

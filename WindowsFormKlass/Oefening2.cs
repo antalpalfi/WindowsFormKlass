@@ -17,6 +17,9 @@ namespace WindowsFormKlass
             InitializeComponent();
         }
         private Televisie VolTeller = new Televisie();
+        private Televisie KanTeller = new Televisie();
+       
+
         private void btnVolPlus_Click(object sender, EventArgs e)
         {
             VolTeller.VolVerhogen();
@@ -30,6 +33,12 @@ namespace WindowsFormKlass
         private void button1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnKanPlus_Click(object sender, EventArgs e)
+        {
+            KanTeller.KanPlus();
+            lbKanaal.Text = KanTeller.ToString();
         }
     }
 }

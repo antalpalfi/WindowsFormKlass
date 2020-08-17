@@ -7,16 +7,33 @@ using System.Windows.Forms;
 
 namespace WindowsFormKlass
 {
-    class Televisie
+    public class Televisie
     {
         private int VolTeller = 0;
-        //private int KanTeller = 0;
-        private List<string> Kanaal = new List<string> {"BBC","Natinal Geography","RTL","Comedy","Mtv" };
+        private int KanTeller = 0;
+        public List<string> Kanaal = new List<string> { "BBC", "Natinal Geography", "RTL", "Comedy", "Mtv" };
 
         public void KanAalMin()
         {
-          
+            KanTeller--;
 
+        }
+        public void KanPlus()
+        {
+           
+            if (KanTeller<Kanaal.Count)
+            {
+                KanTeller++;
+            }
+            else
+            {
+                MessageBox.Show("Buy VIP packet");
+            }
+            
+        }
+        public string KanName()
+        {
+            return Kanaal[KanTeller];
         }
         public void VolVerhogen()
         {
@@ -40,6 +57,10 @@ namespace WindowsFormKlass
             {
                 MessageBox.Show($"Volume is on minimum {VolTeller}");
             }
+        }
+        public override string ToString()
+        {
+            return KanName();
         }
     }
 }
