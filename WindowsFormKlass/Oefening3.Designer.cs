@@ -31,9 +31,6 @@
             this.lbWiskunde = new System.Windows.Forms.Label();
             this.lbComp = new System.Windows.Forms.Label();
             this.lbGrammatica = new System.Windows.Forms.Label();
-            this.txtWiskunde = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.btnWiskunde = new System.Windows.Forms.Button();
             this.btnComputer = new System.Windows.Forms.Button();
             this.btnGrammatica = new System.Windows.Forms.Button();
@@ -46,6 +43,11 @@
             this.btnWisRem = new System.Windows.Forms.Button();
             this.btnCompRem = new System.Windows.Forms.Button();
             this.btnGrammRem = new System.Windows.Forms.Button();
+            this.numComp = new System.Windows.Forms.NumericUpDown();
+            this.numGramm = new System.Windows.Forms.NumericUpDown();
+            this.txtWiskunde = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.numComp)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numGramm)).BeginInit();
             this.SuspendLayout();
             // 
             // lbWiskunde
@@ -75,30 +77,9 @@
             this.lbGrammatica.TabIndex = 2;
             this.lbGrammatica.Text = "Grammatica";
             // 
-            // txtWiskunde
-            // 
-            this.txtWiskunde.Location = new System.Drawing.Point(12, 29);
-            this.txtWiskunde.Name = "txtWiskunde";
-            this.txtWiskunde.Size = new System.Drawing.Size(66, 20);
-            this.txtWiskunde.TabIndex = 3;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(158, 32);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(66, 20);
-            this.textBox2.TabIndex = 4;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(298, 31);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(66, 20);
-            this.textBox3.TabIndex = 5;
-            // 
             // btnWiskunde
             // 
-            this.btnWiskunde.Location = new System.Drawing.Point(84, 29);
+            this.btnWiskunde.Location = new System.Drawing.Point(72, 32);
             this.btnWiskunde.Name = "btnWiskunde";
             this.btnWiskunde.Size = new System.Drawing.Size(33, 23);
             this.btnWiskunde.TabIndex = 6;
@@ -108,7 +89,7 @@
             // 
             // btnComputer
             // 
-            this.btnComputer.Location = new System.Drawing.Point(230, 32);
+            this.btnComputer.Location = new System.Drawing.Point(215, 35);
             this.btnComputer.Name = "btnComputer";
             this.btnComputer.Size = new System.Drawing.Size(33, 20);
             this.btnComputer.TabIndex = 7;
@@ -117,7 +98,7 @@
             // 
             // btnGrammatica
             // 
-            this.btnGrammatica.Location = new System.Drawing.Point(370, 32);
+            this.btnGrammatica.Location = new System.Drawing.Point(355, 32);
             this.btnGrammatica.Name = "btnGrammatica";
             this.btnGrammatica.Size = new System.Drawing.Size(33, 23);
             this.btnGrammatica.TabIndex = 8;
@@ -203,11 +184,35 @@
             this.btnGrammRem.Text = "Remove";
             this.btnGrammRem.UseVisualStyleBackColor = true;
             // 
+            // numComp
+            // 
+            this.numComp.Location = new System.Drawing.Point(158, 35);
+            this.numComp.Name = "numComp";
+            this.numComp.Size = new System.Drawing.Size(51, 20);
+            this.numComp.TabIndex = 19;
+            // 
+            // numGramm
+            // 
+            this.numGramm.Location = new System.Drawing.Point(298, 32);
+            this.numGramm.Name = "numGramm";
+            this.numGramm.Size = new System.Drawing.Size(51, 20);
+            this.numGramm.TabIndex = 20;
+            // 
+            // txtWiskunde
+            // 
+            this.txtWiskunde.Location = new System.Drawing.Point(15, 35);
+            this.txtWiskunde.Name = "txtWiskunde";
+            this.txtWiskunde.Size = new System.Drawing.Size(37, 20);
+            this.txtWiskunde.TabIndex = 21;
+            // 
             // Oefening3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(449, 188);
+            this.Controls.Add(this.txtWiskunde);
+            this.Controls.Add(this.numGramm);
+            this.Controls.Add(this.numComp);
             this.Controls.Add(this.btnGrammRem);
             this.Controls.Add(this.btnCompRem);
             this.Controls.Add(this.btnWisRem);
@@ -220,14 +225,13 @@
             this.Controls.Add(this.btnGrammatica);
             this.Controls.Add(this.btnComputer);
             this.Controls.Add(this.btnWiskunde);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.txtWiskunde);
             this.Controls.Add(this.lbGrammatica);
             this.Controls.Add(this.lbComp);
             this.Controls.Add(this.lbWiskunde);
             this.Name = "Oefening3";
             this.Text = "Oefening3";
+            ((System.ComponentModel.ISupportInitialize)(this.numComp)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numGramm)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -238,9 +242,6 @@
         private System.Windows.Forms.Label lbWiskunde;
         private System.Windows.Forms.Label lbComp;
         private System.Windows.Forms.Label lbGrammatica;
-        private System.Windows.Forms.TextBox txtWiskunde;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Button btnWiskunde;
         private System.Windows.Forms.Button btnComputer;
         private System.Windows.Forms.Button btnGrammatica;
@@ -253,5 +254,8 @@
         private System.Windows.Forms.Button btnWisRem;
         private System.Windows.Forms.Button btnCompRem;
         private System.Windows.Forms.Button btnGrammRem;
+        private System.Windows.Forms.NumericUpDown numComp;
+        private System.Windows.Forms.NumericUpDown numGramm;
+        private System.Windows.Forms.TextBox txtWiskunde;
     }
 }

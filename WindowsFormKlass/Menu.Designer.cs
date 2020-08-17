@@ -73,6 +73,7 @@
             this.btnOefening4.TabIndex = 3;
             this.btnOefening4.Text = "Oefening4";
             this.btnOefening4.UseVisualStyleBackColor = true;
+            this.btnOefening4.Click += new System.EventHandler(this.btnOefening4_Click);
             // 
             // btnOefening5
             // 

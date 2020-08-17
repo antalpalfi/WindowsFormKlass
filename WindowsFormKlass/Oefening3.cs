@@ -34,20 +34,20 @@ namespace WindowsFormKlass
             gemid = som / listBoxWiskunde.Items.Count;
             labelWiskunde.Text = $"Gemiddelde: {Math.Round(gemid,2)}";
 
-            txtWiskunde.Clear();
+            
             
         }
 
         private void btnWisRem_Click(object sender, EventArgs e)
         {
             Rapport mijnRapport = new Rapport();
-            //deletRapport.WiskundeList.RemoveAt(listBoxWiskunde.SelectedIndex);
+            mijnRapport.WiskundeList.RemoveAt(listBoxWiskunde.SelectedIndex);
            
             listBoxWiskunde.Items.Remove(listBoxWiskunde.SelectedItem);
             
 
            
-            //deletRapport.WiskundeList.RemoveAt(listBoxWiskunde.SelectedItem);
+            
 
         }
     }

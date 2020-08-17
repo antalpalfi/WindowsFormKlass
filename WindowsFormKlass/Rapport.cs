@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace WindowsFormKlass
 {
-    class Rapport
+    public class Rapport
     {
         public List<int> WiskundeList { get; set; }
         public List<int> ComputerList { get; set; }
