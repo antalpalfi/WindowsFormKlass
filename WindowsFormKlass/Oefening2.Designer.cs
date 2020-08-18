@@ -95,6 +95,7 @@
             this.btnKanMin.TabIndex = 5;
             this.btnKanMin.Text = "-";
             this.btnKanMin.UseVisualStyleBackColor = true;
+            this.btnKanMin.Click += new System.EventHandler(this.btnKanMin_Click);
             // 
             // textBox1
             // 

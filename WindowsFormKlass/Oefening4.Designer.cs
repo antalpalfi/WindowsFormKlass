@@ -36,7 +36,6 @@
             this.numDept = new System.Windows.Forms.NumericUpDown();
             this.numBreed = new System.Windows.Forms.NumericUpDown();
             this.btKalk = new System.Windows.Forms.Button();
-            this.lbKalk = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numLenght)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numDept)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numBreed)).BeginInit();
@@ -109,20 +108,11 @@
             this.btKalk.UseVisualStyleBackColor = true;
             this.btKalk.Click += new System.EventHandler(this.btKalk_Click);
             // 
-            // lbKalk
-            // 
-            this.lbKalk.AutoSize = true;
-            this.lbKalk.Location = new System.Drawing.Point(12, 163);
-            this.lbKalk.Name = "lbKalk";
-            this.lbKalk.Size = new System.Drawing.Size(0, 13);
-            this.lbKalk.TabIndex = 8;
-            // 
             // Oefening4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(138, 185);
-            this.Controls.Add(this.lbKalk);
             this.Controls.Add(this.btKalk);
             this.Controls.Add(this.numBreed);
             this.Controls.Add(this.numDept);
@@ -151,6 +141,5 @@
         private System.Windows.Forms.NumericUpDown numDept;
         private System.Windows.Forms.NumericUpDown numBreed;
         private System.Windows.Forms.Button btKalk;
-        private System.Windows.Forms.Label lbKalk;
     }
 }

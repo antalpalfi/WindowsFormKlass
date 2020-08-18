@@ -43,11 +43,9 @@
             this.btnWisRem = new System.Windows.Forms.Button();
             this.btnCompRem = new System.Windows.Forms.Button();
             this.btnGrammRem = new System.Windows.Forms.Button();
-            this.numComp = new System.Windows.Forms.NumericUpDown();
-            this.numGramm = new System.Windows.Forms.NumericUpDown();
             this.txtWiskunde = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.numComp)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numGramm)).BeginInit();
+            this.txtCom = new System.Windows.Forms.TextBox();
+            this.txtGram = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lbWiskunde
@@ -95,6 +93,7 @@
             this.btnComputer.TabIndex = 7;
             this.btnComputer.Text = "=>";
             this.btnComputer.UseVisualStyleBackColor = true;
+            this.btnComputer.Click += new System.EventHandler(this.btnComputer_Click);
             // 
             // btnGrammatica
             // 
@@ -104,6 +103,7 @@
             this.btnGrammatica.TabIndex = 8;
             this.btnGrammatica.Text = "=>";
             this.btnGrammatica.UseVisualStyleBackColor = true;
+            this.btnGrammatica.Click += new System.EventHandler(this.btnGrammatica_Click);
             // 
             // listBoxWiskunde
             // 
@@ -174,6 +174,7 @@
             this.btnCompRem.TabIndex = 16;
             this.btnCompRem.Text = "Remove";
             this.btnCompRem.UseVisualStyleBackColor = true;
+            this.btnCompRem.Click += new System.EventHandler(this.btnCompRem_Click);
             // 
             // btnGrammRem
             // 
@@ -183,20 +184,7 @@
             this.btnGrammRem.TabIndex = 17;
             this.btnGrammRem.Text = "Remove";
             this.btnGrammRem.UseVisualStyleBackColor = true;
-            // 
-            // numComp
-            // 
-            this.numComp.Location = new System.Drawing.Point(158, 35);
-            this.numComp.Name = "numComp";
-            this.numComp.Size = new System.Drawing.Size(51, 20);
-            this.numComp.TabIndex = 19;
-            // 
-            // numGramm
-            // 
-            this.numGramm.Location = new System.Drawing.Point(298, 32);
-            this.numGramm.Name = "numGramm";
-            this.numGramm.Size = new System.Drawing.Size(51, 20);
-            this.numGramm.TabIndex = 20;
+            this.btnGrammRem.Click += new System.EventHandler(this.btnGrammRem_Click);
             // 
             // txtWiskunde
             // 
@@ -205,14 +193,28 @@
             this.txtWiskunde.Size = new System.Drawing.Size(37, 20);
             this.txtWiskunde.TabIndex = 21;
             // 
+            // txtCom
+            // 
+            this.txtCom.Location = new System.Drawing.Point(158, 34);
+            this.txtCom.Name = "txtCom";
+            this.txtCom.Size = new System.Drawing.Size(33, 20);
+            this.txtCom.TabIndex = 22;
+            // 
+            // txtGram
+            // 
+            this.txtGram.Location = new System.Drawing.Point(298, 32);
+            this.txtGram.Name = "txtGram";
+            this.txtGram.Size = new System.Drawing.Size(33, 20);
+            this.txtGram.TabIndex = 23;
+            // 
             // Oefening3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(449, 188);
+            this.Controls.Add(this.txtGram);
+            this.Controls.Add(this.txtCom);
             this.Controls.Add(this.txtWiskunde);
-            this.Controls.Add(this.numGramm);
-            this.Controls.Add(this.numComp);
             this.Controls.Add(this.btnGrammRem);
             this.Controls.Add(this.btnCompRem);
             this.Controls.Add(this.btnWisRem);
@@ -230,8 +232,6 @@
             this.Controls.Add(this.lbWiskunde);
             this.Name = "Oefening3";
             this.Text = "Oefening3";
-            ((System.ComponentModel.ISupportInitialize)(this.numComp)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numGramm)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -254,8 +254,8 @@
         private System.Windows.Forms.Button btnWisRem;
         private System.Windows.Forms.Button btnCompRem;
         private System.Windows.Forms.Button btnGrammRem;
-        private System.Windows.Forms.NumericUpDown numComp;
-        private System.Windows.Forms.NumericUpDown numGramm;
         private System.Windows.Forms.TextBox txtWiskunde;
+        private System.Windows.Forms.TextBox txtCom;
+        private System.Windows.Forms.TextBox txtGram;
     }
 }

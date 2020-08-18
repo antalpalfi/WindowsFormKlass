@@ -23,11 +23,13 @@ namespace WindowsFormKlass
         private void btnVolPlus_Click(object sender, EventArgs e)
         {
             VolTeller.VolVerhogen();
+            lbVolume.Text = $"Vol: {VolTeller.Volteller().ToString()}";
         }
 
         private void btnVolMin_Click(object sender, EventArgs e)
         {
             VolTeller.VolMin();
+            lbVolume.Text =$"Vol: {VolTeller.Volteller().ToString()}";
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -38,6 +40,12 @@ namespace WindowsFormKlass
         private void btnKanPlus_Click(object sender, EventArgs e)
         {
             KanTeller.KanPlus();
+            lbKanaal.Text = KanTeller.ToString();
+        }
+
+        private void btnKanMin_Click(object sender, EventArgs e)
+        {
+            KanTeller.KanAalMin();
             lbKanaal.Text = KanTeller.ToString();
         }
     }

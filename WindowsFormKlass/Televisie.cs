@@ -15,7 +15,16 @@ namespace WindowsFormKlass
 
         public void KanAalMin()
         {
-            KanTeller--;
+           
+            if (KanTeller < Kanaal.Count)
+            {
+                KanTeller--;
+            }
+            else
+            {
+                MessageBox.Show("Buy VIP packet");
+            }
+           
 
         }
         public void KanPlus()
@@ -58,6 +67,11 @@ namespace WindowsFormKlass
                 MessageBox.Show($"Volume is on minimum {VolTeller}");
             }
         }
+        public int Volteller()
+        {
+            return VolTeller;
+        }
+        
         public override string ToString()
         {
             return KanName();

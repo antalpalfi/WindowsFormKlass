@@ -25,7 +25,11 @@ namespace WindowsFormKlass
             zwWembad.breed = decimal.ToDouble(numBreed.Value);
 
             zwWembad.Water();
-            lbKalk.Text = $"{zwWembad.water.ToString()} water kan invullen";
+            MessageBox.Show($"{zwWembad.water.ToString()} L water kan invullen");
+            numBreed.Value =0;
+            numDept.Value = 0;
+            numLenght.Value = 0;
+            
         }
     }
 }
